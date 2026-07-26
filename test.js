@@ -8,7 +8,6 @@ test("One euro should be 1.07 dollars", function() {
 
 test("One dollar should be 156.5 / 1.07 yen", function() {
     const yen = fromDollarToYen(3.5);
-    // El cálculo esperado según la lógica de conversión
     const expected = (3.5 / 1.07) * 156.5;
     expect(yen).toBe(expected);
 });
